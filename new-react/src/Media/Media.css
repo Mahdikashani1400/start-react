@@ -1,0 +1,10 @@
+.media__container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+.media__container a{
+    color: rgba(90, 107, 193, 0.901);
+    font-size: 18px;
+}

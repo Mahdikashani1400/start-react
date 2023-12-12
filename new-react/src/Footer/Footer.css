@@ -1,0 +1,11 @@
+div.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 24px;
+  color: aqua;
+  margin-top: 2rem;
+}
