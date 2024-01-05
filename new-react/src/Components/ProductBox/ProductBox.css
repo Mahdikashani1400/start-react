@@ -1,0 +1,82 @@
+.header__productas {
+  font-size: 28px;
+  color: rgb(24, 18, 47);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 2rem;
+}
+
+.product-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
+  padding: 2.5rem 0;
+}
+.product-box:not(:last-child):after {
+  content: "";
+  position: absolute;
+  height: 1.5px;
+  background: #00001a;
+  width: 70%;
+  bottom: 0;
+}
+.product-box .img {
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.product-box img {
+  width: 130px;
+  transition: 0.3s all;
+}
+.product-box img:hover {
+  transform: scale(1.2);
+}
+.product-box p {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+}
+.product-box .input {
+  border: 2px solid rgb(25, 25, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  width: 80px;
+  height: 28px;
+  padding: 0.3rem 0;
+  background-color: transparent;
+  user-select: none !important;
+}
+.product-box .price {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.product-box svg {
+  padding-top: 7px;
+}
+.product-box .input__counter {
+  position: relative;
+}
+.product-box .input__counter {
+  position: relative;
+}
+.product-box .input__counter span {
+  position: absolute;
+  padding: 0 5px;
+  cursor: pointer;
+}
+
+.input__counter span.plus {
+  right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .product-box {
+    flex-direction: column;
+  }
+}
